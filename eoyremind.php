@@ -152,6 +152,9 @@ function eoyremind_civicrm_post($op, $objectName, $objectId, &$objectRef) {
           'target_contact_id' => $objectRef->contact_id,
           'activity_type_id' => 'Remind Me Later',
           'status_id' => 'Completed',
+          'options' => [
+            'limit' => 0,
+          ],
         ]);
         //Civi::log()->debug('eoyremind_civicrm_post', ['$activities' => $activities]);
 
