@@ -6,7 +6,7 @@ If a person requests to be reminded later to donate to the campaign, an activity
 
 If the person has asked to be reminded and later donates, this extension searches for a Remind Me Later activity within the configured date range and changes the status to Not Required. By changing the status, we ensure the user does not receive scheduled reminders which condition on the Completed status.
 
-To use this extension, first configure the date range. In CiviCRM v5.8.0+ this can be done by visiting: URL/civicrm/admin/setting/eoyremind?reset=1
+To use this extension, first configure the date range. In CiviCRM v5.8.0+ this can be done by visiting the 'EOY Remind Workflow Settings' page under the Administer menu item.
 
 In prior versions this can be done by visiting the API explorer.
 
