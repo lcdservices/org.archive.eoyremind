@@ -149,7 +149,7 @@ function eoyremind_civicrm_post($op, $objectName, $objectId, &$objectRef) {
       //search for a completed remind me later activity within the date range
       try {
         $activities = civicrm_api3('activity', 'get', [
-          'target_contact_id' => $objectRef->contact_id,
+          'source_contact_id' => $objectRef->contact_id,
           'activity_type_id' => 'Remind Me Later',
           'status_id' => 'Completed',
           'options' => [
